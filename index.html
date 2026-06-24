@@ -20,7 +20,9 @@ main{
   max-width: 700px;
  margin: 2 auto;
  padding: 20px;
-display: flex;
+}
+article{
+  display: flex;
 }
 
 img{
@@ -57,16 +59,29 @@ height: 100px;
   <img src="Gemini_Generated_Image_grtm7zgrtm7zgrtm.png" alt="Foto centralizada da jogadora Gabi Guimaraes com a bola de volei.
    Na parte inferior, texto "VNL FEMININA" nas cores azul escuro e azul claro.">
    <div>
-   <h2>o meu primeiro mero projeto aqui</h2>
+   <h2>o meu primeiro mero post aqui</h2>
    <p ">Feito por: Evelyn</p>
   <p class="artigo-2p">Bem-vindo ao meu primeiro conteudo por aqui! neste lugar falarei sobre a vnl feminina</p>
 <button>🖤 <span>0</span></button>
 <button> 👎 <span>0</span></button>
 <div>
-<article>
-   <h2>o meu primeiro mero projeto aqui</h2>
+  <article>
+   <h2>o meu segundo mero post aqui</h2>
    <p>Feito por: Evelyn</p>
-  <p class="artigo-2p">Bem-vindo ao meu primeiro conteudo por aqui! neste lugar falarei sobre a v
+  <p class ="artigo-2p">Brasil e Italia dia 7 de junho foi um jogo bem emocionante da VNL feminina. 
+    A selecao brasileira ganhou por 3 a 2 sets e encerrou a invencibilidade da selecao italiana. 
+    a parcial dos sets foi:25-15, 25-22, 22-25, 24-26 e 15-13.
+    as principais pontuadoras foram: A Ana Cristina com 22 pontos, Julia Bergmann com 18 pontos
+    Diana com 18 pontos e Antropova com 18 pontos.
+    Vencemos no tie-break
+    <button>🖤<span>0</span></button>
+    <button>👎<span>0</span></button>
+    <button>💬<span>0</span></button>
+    <button>💾<span>0</span></button>
+    <button>👉<span>0</span></button>
+    <div>
+      <article>
+</article>
 <main>
 <body>
 
@@ -74,11 +89,18 @@ height: 100px;
   const botoes = document.querySelectorAll("button");
 
 botoes.forEach( function(botao){
-botao.addEventListener("click, botaoClicado")
+let curtiu = false;
+  botao.addEventListener("click, botaoClicado")
 function botaoClicado(){
   console.log("fui clicado");
   let texto = botao.querySelector("span")
-  texto.textContent++;
+  if (curtiu === false){
+texto.textContent++;
+  curtiu = true;
+} else{
+  texto.textContent--;
+  curtiu = false;
+}
 }
 })
 
