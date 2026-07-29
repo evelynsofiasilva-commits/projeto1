@@ -11,8 +11,8 @@ header {
 }
 
 main {
-    background-color: #ffff
-    color: #1e82bb01
+    background-color: hsla(332, 37%, 40%, 0)
+    color: #fff
     margin: 0 auto;
     padding: 10px;
 
