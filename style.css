@@ -1,45 +1,50 @@
+/* Boa prática: Reset de margens e padding para evitar barras de rolagem */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-max-width:100vw;
+    width: 100%;
+    max-width: 100%;
 }
 
 header {
     background-color: rgb(57, 155, 122);
-    color: #ffff;
+    color: #ffffff; /* Corrigido de #ffff para #ffffff */
     text-align: center;
     margin: 0 auto;
     padding: 10px;
 }
 
 main {
-    background-color: hsla(332, 37%, 40%, 0);
-    color: #ffff;
+    /* Ajustado o valor do alpha para 1 (visível). Caso queira transparente, use 'transparent' */
+    background-color: hsla(332, 37%, 40%, 1); 
+    color: #ffffff; /* Corrigido de #ffff para #ffffff */
     margin: 0 auto;
     padding: 10px;
-
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 article {
     display: flex;
-
-border: 1px solid rgb(13, 190, 84);
-
-margin:10px;
-gap: 10px;
-padding:10px;
-
-flex: 1 1 35%; 
-
-flex-direction: column;
-align-items: center;
-text-align: center;
-justify-content: center;
+    border: 1px solid rgb(13, 190, 84);
+    margin: 10px;
+    gap: 10px;
+    padding: 10px;
+    flex: 1 1 35%; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 img {
     width: 40px;
     height: 40px;
+    object-fit: cover; /* Mantém a proporção da imagem dentro do tamanho estipulado */
 }
 
 .artigo-2p {
