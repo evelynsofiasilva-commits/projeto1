@@ -1,5 +1,5 @@
 body {
-max width:100vw;
+max-width:100vw;
 }
 
 header {
@@ -11,8 +11,8 @@ header {
 }
 
 main {
-    background-color: hsla(332, 37%, 40%, 0)
-    color: #ffff
+    background-color: hsla(332, 37%, 40%, 0);
+    color: #ffff;
     margin: 0 auto;
     padding: 10px;
 
@@ -23,13 +23,13 @@ flex-wrap: wrap;
 anticle {
     display: flex;
 
-border: 1px solid 1[rgb(13, 190, 84)]
+border: 1px solid rgb(13, 190, 84);
 
 margin:10px;
 gap: 10px;
 padding:10px;
 
-flex: 1 1 35%
+flex: 1 1 35%; 
 
 flex-direction: column;
 align-items: center;
