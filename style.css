@@ -1,27 +1,40 @@
-/* Boa prática: Reset de margens e padding para evitar barras de rolagem */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --cor-primaria: rgb(26, 195, 138); 
+    --cor-secundaria: #10d127ef;   
+    --cor-fundo: #ffffff;
+    --cor-texto: #333333;              
+    --cor-contraste: #000000;         
+    --cor-botao: #030000ec;             
+}
+
+.tema-escuro{
+     --cor-primaria: rgb(3, 250, 168); 
+    --cor-secundaria: #12761eef;   
+    --cor-fundo: #030303;
+    --cor-texto: #000000;              
+    --cor-contraste: #363636;         
+    --cor-botao: #0a0101ec;             
+}
+
+.tema-escuro a {
+    cor= var(--cor-primaria)
 }
 
 body {
-    width: 100%;
-    max-width: 100%;
+   max-width: 100%;
 }
 
 header {
-    background-color: rgb(57, 155, 122);
-    color: #ffffff; /* Corrigido de #ffff para #ffffff */
+    background-color: var(--cor-primaria)
+    color:var(--cor-contraste);
     text-align: center;
     margin: 0 auto;
     padding: 10px;
 }
 
 main {
-    /* Ajustado o valor do alpha para 1 (visível). Caso queira transparente, use 'transparent' */
-    background-color: hsla(332, 37%, 40%, 1); 
-    color: #ffffff; /* Corrigido de #ffff para #ffffff */
+    background-color: var(--cor-fundo)
+    color:var(--cor-primaria);
     margin: 0 auto;
     padding: 10px;
     display: flex;
@@ -30,7 +43,7 @@ main {
 
 article {
     display: flex;
-    border: 1px solid rgb(13, 190, 84);
+    border: 1px solid var(--cor4); 
     margin: 10px;
     gap: 10px;
     padding: 10px;
@@ -44,7 +57,7 @@ article {
 img {
     width: 40px;
     height: 40px;
-    object-fit: cover; /* Mantém a proporção da imagem dentro do tamanho estipulado */
+    object-fit: cover;
 }
 
 .artigo-2p {
