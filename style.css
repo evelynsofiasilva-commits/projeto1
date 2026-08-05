@@ -4,7 +4,9 @@
     --cor-fundo: #ffffff;
     --cor-texto: #333333;              
     --cor-contraste: #000000;         
-    --cor-botao: #030000ec;             
+    --cor-botao: #030000ec;
+    
+    --fonte-texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .tema-escuro{
@@ -16,12 +18,21 @@
     --cor-botao: #0a0101ec;             
 }
 
+.tema-escuro p {
+    cor= var(--cor-texto)
+}
+
 .tema-escuro a {
-    cor= var(--cor-primaria)
+    cor=var(--cor-primaria)
+}
+
+.tema-escuro header p{
+    color=var(--cor-contraste)
 }
 
 body {
-   max-width: 100%;
+   max: width 100vw;
+   font-family: var(--fonte-texto)
 }
 
 header {
