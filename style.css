@@ -74,3 +74,13 @@ img {
 .artigo-2p {
     font-weight: bold;
 }
+
+.btn-tema-escuro {
+    position:fixed;
+    bottom: 14px;
+    right:14px;
+    font-size: 25px;
+    padding:10px;
+    backgroud-color:var(--cor-primaria);
+    border-radius: 55%;
+}

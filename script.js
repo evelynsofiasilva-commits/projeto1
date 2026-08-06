@@ -1,4 +1,3 @@
-// Corrigido de querySelectAll para querySelectorAll
 const botoes = document.querySelectorAll("button");
 
 botoes.forEach(function (botao) {
@@ -19,4 +18,8 @@ botoes.forEach(function (botao) {
             curtiu = false;
         }
     }
-});
+})
+
+const btnTemaescuro = document.querySelector("btn-tema-escuro");
+
+btnTemaEscuro.addEventListener("click", botaoclicado);
