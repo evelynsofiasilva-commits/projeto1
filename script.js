@@ -18,8 +18,18 @@ botoes.forEach(function (botao) {
             curtiu = false;
         }
     }
-})
+});
 
-const btnTemaescuro = document.querySelector("btn-tema-escuro");
+const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
 
-btnTemaEscuro.addEventListener("click", botaoclicado);
+btnTemaEscuro.addEventListener("click", MudaParaoModoEscuro);
+
+function MudaParaoModoEscuro() {
+    const corpoPagina = document.body;
+
+    if (corpoPagina.classList.contains("tema-escuro")) {
+        corpoPagina.classList.remove("tema-escuro");
+    } else {
+        corpoPagina.classList.add("tema-escuro");
+    }
+}
