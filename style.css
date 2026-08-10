@@ -90,5 +90,5 @@ img {
     padding: 10px;
     
     background-color: var(--cor-primaria);
-    border-radius: 50%;
+    border-radius: 8px;
 }
